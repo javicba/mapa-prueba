@@ -269,7 +269,7 @@
     var map = L.map('map',{
               center:[-15,-60],
               zoom: 3,
-              layers:[osm]
+              layers:[ArgenMapOscuro]
             });
 //---------------ONTROL DE CAPAS-----------------------------------------------------------    
   L.control.layers(baseLayers).addTo(map);
@@ -382,7 +382,7 @@
     // Recorre las capas que estan en el mapa
     map.eachLayer(function(layer) {
     // No elimina el mapa base OSM
-      if (layer !== osm) {
+      if (layer !== ArgenMapOscuro) {
         map.removeLayer(layer);
       }
     });
